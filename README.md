@@ -1,2 +1,2 @@
-# -ode-snippets-collection
+# Code-snippets-collection
 Code-snippets collection
