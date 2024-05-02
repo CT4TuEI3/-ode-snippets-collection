@@ -12,4 +12,12 @@ extension UIStackView {
             addArrangedSubview($0)
         }
     }
+
+    //MARK: - Или это
+    
+    func addArrangedSubviews(_ views: UIView...) {
+        views.forEach {
+            addArrangedSubview($0)
+        }
+    }
 }
