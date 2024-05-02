@@ -11,4 +11,12 @@ extension UIView {
     func addSubviews(_ views: UIView...) {
         addSubviews(views)
     }
+
+    // MARK: - Или это
+    
+    func addSubviews(_ views: UIView...) {
+        views.forEach {
+            addSubview($0)
+        }
+    }
 }
