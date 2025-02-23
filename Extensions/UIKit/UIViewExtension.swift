@@ -19,4 +19,20 @@ extension UIView {
             addSubview($0)
         }
     }
+
+    func autolayout(block: () -> Void) {
+        self.translatesAutoresizingMaskIntoConstraints = false
+        block()
+    }
+
+    func constraintSize(width: CGFloat?, height: CGFloat?) {
+        self.autolayout {
+            if let width {
+                self.widthAnchor.constraint(equalToConstant: width).activate()
+            }
+            if let height {
+                self.heightAnchor.constraint(equalToConstant: height).activate()
+            }
+        }
+    }
 }
