@@ -36,3 +36,12 @@ extension UIView {
         }
     }
 }
+
+extension NSLayoutConstraint {
+    @discardableResult
+    func activate() -> NSLayoutConstraint {
+        self.isActive = true
+        return self
+    }
+}
+
